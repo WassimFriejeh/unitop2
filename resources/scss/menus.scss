@@ -1,0 +1,107 @@
+nav {
+    @apply fixed w-full z-30 flex items-center lg:h-[80px] md:h-[60px] h-[50px]  duration-1000  text-[1vw];
+    .header-container {
+        @apply main-container flex items-center justify-between h-full duration-1000;
+    }
+    .whiteHeader {
+        @apply text-black bg-white;
+        box-shadow: 0px 20px 30px #00000012;
+        .contact-us-button {
+            @apply bg-darkColor hidden sm:flex items-center  gap-x-2 text-white px-5 py-2 font-bold;
+            &:hover {
+                @apply bg-primaryColor;
+                i {
+                    @apply text-white;
+                }
+            }
+            i {
+                @apply text-primaryColor;
+            }
+        }
+    }
+    .transparentHeader {
+        @apply text-white bg-transparent;
+        .contact-us-button {
+            @apply bg-white hidden sm:flex items-center gap-x-2 text-darkColor px-5 py-2 font-bold;
+            &:hover {
+                @apply bg-primaryColor text-white;
+
+                i {
+                    @apply text-white;
+                }
+            }
+            i {
+                @apply text-primaryColor;
+            }
+        }
+    }
+    .links-container {
+    }
+    .dropdown-button {
+        @apply capitalize sm:flex hidden h-full items-center gap-x-2;
+        &:hover {
+            i {
+                @apply rotate-180 transition duration-500 items-start;
+            }
+        }
+        i {
+            @apply transition duration-500 flex items-end;
+        }
+        .dropdown-menu {
+            @apply py-[1vw] px-[2vw] z-10 absolute text-black bg-white lg:top-[80px] md:top-[60px] w-[18vw];
+
+            .menu-link {
+                @apply block  py-2 hover:text-primaryColor text-left;
+            }
+        }
+        &.phone {
+            @apply flex h-fit flex-col items-start;
+
+            .dropdown-menu {
+                @apply w-full relative;
+            }
+        }
+    }
+    // .btn-arrow-light {
+    //     @apply bg-white flex items-center gap-x-2 text-darkColor px-5 py-2 font-bold;
+    //     &:hover {
+    //         @apply bg-primaryColor text-white;
+
+    //         i {
+    //             @apply text-white;
+    //         }
+    //     }
+    //     i {
+    //         @apply text-primaryColor;
+    //     }
+    // }
+    // .btn-arrow-dark {
+    //     @apply bg-darkColor flex items-center  gap-x-2 text-white px-5 py-2 font-bold;
+    //     &:hover {
+    //         @apply bg-primaryColor;
+
+    //         i {
+    //             @apply text-white;
+    //         }
+    //     }
+    //     i {
+    //         @apply text-primaryColor;
+    //     }
+    // }
+}
+
+footer {
+    @apply bg-darkColor  text-white capitalize;
+    a {
+        @apply block w-fit;
+    }
+
+    .award {
+        @apply sm:w-20 sm:h-20 w-12 h-12;
+        filter: grayscale(100%);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}

@@ -1,0 +1,191 @@
+@layer components {
+    .asp {
+        @apply bg-gray-300;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+
+        &.contain img {
+            object-fit: contain;
+        }
+
+        &.cover img {
+            object-fit: cover;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #productViewer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .super-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.4;
+        }
+        .custom-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.5;
+        }
+        .whitesh-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(249, 249, 249);
+            background: linear-gradient(
+                180deg,
+                rgba(249, 249, 249, 0) 0%,
+                rgba(144, 145, 145, 0.3688068977591037) 67%,
+                rgba(68, 69, 70, 0.8421962535014006) 84%,
+                rgba(68, 69, 70, 1) 100%
+            );
+        }
+        .play-icon {
+            @apply absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2;
+        }
+        &.grey {
+            img {
+                transition: 0.3ms;
+                filter: grayscale(1);
+            }
+            &:hover {
+                img {
+                    filter: grayscale(0) !important;
+                }
+            }
+        }
+    }
+    .asp-1-1 {
+        padding-bottom: calc(calc(100% * 1) / 1);
+    }
+    .asp-3-1 {
+        padding-bottom: calc(calc(100% * 1) / 3);
+    }
+    .asp-2-1 {
+        padding-bottom: calc(calc(100% * 1) / 2);
+    }
+    .asp-1-6-1 {
+        padding-bottom: calc(calc(100% * 1) / 1.667);
+    }
+    .asp-2-2 {
+        padding-bottom: calc(calc(100% * 1) / 2);
+    }
+    .asp-1-2 {
+        padding-bottom: calc(calc(100% * 2) / 1);
+    }
+    .asp-4-1 {
+        padding-bottom: calc(calc(100% * 1) / 4);
+    }
+    .asp-4-2 {
+        padding-bottom: calc(calc(100% * 2) / 4);
+    }
+    .asp-4-3 {
+        padding-bottom: calc(calc(100% * 3) / 4);
+    }
+    .asp-4-5 {
+        padding-bottom: calc(calc(100% * 5) / 4);
+    }
+
+    .asp-16-9 {
+        padding-bottom: calc(calc(100% * 9) / 16);
+    }
+    .asp-11-9 {
+        padding-bottom: calc(calc(100% * 9) / 11);
+    }
+    .contact-asp {
+        padding-bottom: calc(calc(100% * 1) / 4);
+    }
+    .asp-2-3 {
+        padding-bottom: calc(calc(100% * 3) / 2);
+    }
+    .asp-3-2 {
+        padding-bottom: calc(calc(100% * 2) / 3);
+    }
+    .asp-17-22 {
+        padding-bottom: calc(calc(100% * 22) / 17);
+    }
+    .asp-3-4 {
+        padding-bottom: calc(calc(100% * 4) / 3);
+    }
+    .asp-2-5-1 {
+        padding-bottom: calc(calc(100% * 1) / 2.52);
+    }
+    .asp-9-16 {
+        padding-bottom: calc(calc(100% * 16) / 9);
+    }
+    .asp-16-8 {
+        padding-bottom: calc(calc(100% * 8) / 16);
+    }
+    .asp-16-11 {
+        padding-bottom: calc(calc(100% * 11) / 16);
+    }
+    .asp-11-5 {
+        padding-bottom: calc(calc(100% * 5) / 11);
+    }
+    .asp-5-11 {
+        padding-bottom: calc(calc(100% * 11) / 5);
+    }
+    .asp-12-5 {
+        padding-bottom: calc(calc(100% * 5) / 12);
+    }
+    .asp-100 {
+        width: 100%;
+        height: calc(100vh - 70px);
+    }
+    .asp-5-2 {
+        padding-bottom: calc(calc(100% * 2) / 5);
+    }
+    .asp-5-3 {
+        padding-bottom: calc(calc(100% * 3) / 5);
+    }
+    .asp-5-6 {
+        padding-bottom: calc(calc(100% * 6) / 5);
+    }
+    .asp-6-2 {
+        padding-bottom: calc(calc(100% * 2) / 6);
+    }
+    .asp-6-3 {
+        padding-bottom: calc(calc(100% * 3) / 6);
+    }
+    .asp-1122-468 {
+        padding-bottom: calc(calc(100% * 468) / 1122);
+    }
+
+    .asp-336-205 {
+        padding-bottom: calc(calc(100% * 205) / 336);
+    }
+    .asp-8-10 {
+        padding-bottom: calc(calc(100% * 10) / 8);
+    }
+}
